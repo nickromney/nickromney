@@ -1,16 +1,58 @@
-## Hi there 👋
+<p align="center">
+  <img src="./assets/profile-header.svg" alt="Nick Romney. Cloud engineer, infrastructure generalist, and documentation-first platform builder." width="100%" />
+</p>
 
-<!--
-**nickromney/nickromney** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://www.nickromney.com">Website</a>
+  ·
+  <a href="https://www.nickromney.com/writing/">Writing</a>
+  ·
+  <a href="https://www.nickromney.com/certifications/">Certifications</a>
+  ·
+  <a href="https://www.nickromney.com/style/">Non-AI thesis proofreader</a>
+  ·
+  <a href="https://www.linkedin.com/in/nickromney/">LinkedIn</a>
+  ·
+  <a href="https://www.credly.com/users/nick-romney.e2b44c67/badges#">Credly</a>
+</p>
 
-Here are some ideas to get you started:
+I am a hands-on cloud and infrastructure engineer who has spent 25 years keeping systems running, helping development and operations teams work better together, and turning fragile manual processes into repeatable documented workflows.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Most recently, that has meant helping security-conscious organisations adopt containers and Kubernetes without losing the controls they need. Across that time, it has also meant being the person responsible for most things with a plug, and certainly most things with an IP address.
+
+## What I Do
+
+- Build and improve secure platforms with Terraform, Kubernetes, Azure, AWS, Linux, and Bash
+- Bridge the gap between Ops and Dev teams without turning either side into the villain
+- Translate business requirements into technical plans that can actually be delivered
+- Distil messy processes into scripts, checklists, runbooks, and readable documentation
+
+## Current Threads
+
+- Platform experiments around local Kubernetes, Lima, and repeatable infrastructure workflows
+- Small practical tools for certificates, smoke testing, and developer utilities
+- Writing about cloud, security, AI-assisted development, and web tooling at [nickromney.com](https://www.nickromney.com)
+- Teaching with the [Terraform AKS baseline clusters course](https://www.udemy.com/course/terraform-aks-baseline-clusters-deployment-walkthrough/?referralCode=B78129C45377998C5532)
+
+## Selected Public Work
+
+| Project | What it is |
+| --- | --- |
+| [certconv](https://github.com/nickromney/certconv) | Non-invasive certificate inspection and conversion tool with an optional TUI |
+| [website-testing](https://github.com/nickromney/website-testing) | Minimal smoke-testing framework that is evolving from bash helpers into a Go CLI and TUI |
+| [platform](https://github.com/nickromney/platform) | Platform-engineering experiments across kind, Lima, Kubernetes, and local lab environments |
+| [visualsubnetcalc](https://github.com/nickromney/visualsubnetcalc) | Visual subnet design tool for planning networks and collaborating on address layouts |
+| [frankenphp-moodle](https://github.com/nickromney/frankenphp-moodle) | Container baseline for running Moodle on FrankenPHP and MariaDB with repeatable verification |
+| [laemp](https://github.com/nickromney/laemp) | Debian and Ubuntu host provisioning script with optional Moodle deployment |
+
+## Credentials
+
+I hold the [CISSP](https://www.isc2.org/Certifications/CISSP), recognised as comparable to the U.K. Master's degree standard, alongside certifications across Terraform, Kubernetes, security, AWS, Azure, and Oracle Cloud Infrastructure.
+
+The hands-on ones matter to me as much as the paper ones, so that list includes `CKA`, `CKAD`, `CKS`, the HashiCorp Terraform Associate, and a fairly deep run through AWS and Azure tracks.
+
+## Working Style
+
+> I occasionally describe myself as an "internet plumber".
+>
+> The job is not finished when the system works once. It is finished when the process is tuned, the boring parts are automated, and the documentation exists for the next person.

@@ -1,0 +1,15 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nick Romney profile header</title>
+  <desc id="desc">Editorial-style banner with the name Nick Romney and a summary of cloud, Kubernetes, security, and documentation work.</desc>
+  <rect width="1200" height="320" rx="24" fill="#F7F3EA"/>
+  <rect x="32" y="32" width="1136" height="256" rx="18" fill="#111827"/>
+  <rect x="68" y="68" width="6" height="184" rx="3" fill="#C28A2E"/>
+  <circle cx="1046" cy="94" r="18" fill="#244B5A"/>
+  <circle cx="1098" cy="94" r="18" fill="#C28A2E"/>
+  <circle cx="1046" cy="146" r="18" fill="#7A1F1F"/>
+  <circle cx="1098" cy="146" r="18" fill="#F7F3EA"/>
+  <text x="104" y="118" fill="#F7F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="0.5">Nick Romney</text>
+  <text x="104" y="157" fill="#D1D5DB" font-family="'Trebuchet MS', Helvetica, Arial, sans-serif" font-size="22">Cloud engineer | infrastructure generalist | documentation-first builder</text>
+  <text x="104" y="205" fill="#C28A2E" font-family="'Trebuchet MS', Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.2">TERRAFORM  |  KUBERNETES  |  SECURITY  |  AZURE  |  AWS  |  LINUX</text>
+  <text x="104" y="244" fill="#9CA3AF" font-family="'Trebuchet MS', Helvetica, Arial, sans-serif" font-size="18">Bridging operations, development, and the unglamorous work of making systems reliable.</text>
+</svg>
