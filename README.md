@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-header.svg" alt="Nick Romney. Cloud engineer, infrastructure generalist, and documentation-first platform builder." width="100%" />
+  <img src="./assets/profile-header.svg" alt="Nick Romney. Cloud engineering consultant, infrastructure generalist, and documentation-first platform builder." width="100%" />
 </p>
 
 <p align="center">
@@ -18,21 +18,40 @@
 
 I am a hands-on cloud and infrastructure engineer who has spent 25 years keeping systems running, helping development and operations teams work better together, and turning fragile manual processes into repeatable documented workflows.
 
-Most recently, that has meant helping security-conscious organisations adopt containers and Kubernetes without losing the controls they need. Across that time, it has also meant being the person responsible for most things with a plug, and certainly most things with an IP address.
+Most recently, that has meant helping security-conscious teams modernise delivery with Kubernetes, Terraform or Pulumi, cloud networking, security guardrails, disaster recovery, and the documentation that lets the next person operate the thing with confidence. Across that time, it has also meant being the person responsible for most things with a plug, and certainly most things with an IP address.
 
 ## What I Do
 
-- Build and improve secure platforms with Terraform, Kubernetes, Azure, AWS, Linux, and Bash
-- Bridge the gap between Ops and Dev teams without turning either side into the villain
-- Translate business requirements into technical plans that can actually be delivered
-- Distil messy processes into scripts, checklists, runbooks, and readable documentation
+- Modernise regulated and business-critical platforms across Azure, AWS, Kubernetes, Terraform, Pulumi, Linux, and Bash
+- Build internal platform capabilities with self-service infrastructure, GitHub Actions, secure runner patterns, and practical onboarding
+- Improve resilience with stronger networking, disaster recovery, identity, backup, and repeatable infrastructure definitions
+- Distil messy processes into scripts, diagrams, runbooks, and course material that teams can actually use
 
 ## Current Threads
 
+- Client work across banking infrastructure, platform engineering, AWS resilience, and delivery enablement
 - Platform experiments around local Kubernetes, Lima, and repeatable infrastructure workflows
 - Small practical tools for certificates, smoke testing, and developer utilities
 - Writing about cloud, security, AI-assisted development, and web tooling at [nickromney.com](https://www.nickromney.com)
 - Teaching with the [Terraform AKS baseline clusters course](https://www.udemy.com/course/terraform-aks-baseline-clusters-deployment-walkthrough/?referralCode=B78129C45377998C5532)
+
+## Websites I Own or Run
+
+- [Avuncular](https://avuncular.co/)
+- [By Lunchtime](https://bylunchtime.com/)
+- [CI/CD Pipelines](https://cicdpipelines.com/)
+- [Online Safety Alliance](https://www.onlinesafetyalliance.org/)
+
+## Project Strands
+
+These are the recurring strands that cut across the projects I take on:
+
+| Strand | What it looks like in practice |
+| --- | --- |
+| Banking modernisation | Private AKS, ExpressRoute, Terraform modules, WAFs, service mesh, multi-environment delivery, and diagrams-as-code for regulated digital banking platforms |
+| Platform self-service | Internal developer platforms for 40+ teams using Pulumi, reusable GitHub Actions, secure runner hardening, onboarding docs, and standard deployment paths |
+| AWS resilience and recovery | EKS optimisation, IAM and AWS SSO, ransomware-aware backup and disaster recovery design, Redshift analytics, and legacy PHP containerisation |
+| AKS enablement and teaching | Turning reference architectures into Terraform, GitOps workflows, Azure policy baselines, helper scripts, and practical course content teams can apply immediately |
 
 ## Selected Public Work
 
