@@ -16,62 +16,44 @@
   <a href="https://www.credly.com/users/nick-romney.e2b44c67/badges#">Credly</a>
 </p>
 
-I am a hands-on cloud and infrastructure engineer who has spent 25 years keeping systems running, helping development and operations teams work better together, and turning fragile manual processes into repeatable documented workflows.
+**I build cloud platforms that teams can run with confidence.**
 
-Most recently, that has meant helping security-conscious teams modernise delivery with Kubernetes, Terraform or Pulumi, cloud networking, security guardrails, disaster recovery, and the documentation that lets the next person operate the thing with confidence. Across that time, it has also meant being the person responsible for most things with a plug, and certainly most things with an IP address.
+I'm Nick, a hands-on cloud and infrastructure engineer with 25 years spent keeping systems running, bringing Dev and Ops together, and replacing fragile manual processes with repeatable, documented workflows. Occasionally: internet plumber.
 
-## What I Do
+My work spans banking modernisation, internal developer platforms, and disaster recovery. Security, automation, and documentation are part of the build from the start.
 
-- Modernise regulated and business-critical platforms across Azure, AWS, Kubernetes, Terraform, Pulumi, Linux, and Bash
-- Build internal platform capabilities with self-service infrastructure, GitHub Actions, secure runner patterns, and practical onboarding
-- Improve resilience with stronger networking, disaster recovery, identity, backup, and repeatable infrastructure definitions
-- Distil messy processes into scripts, diagrams, runbooks, and course material that teams can actually use
+## What that looks like
 
-## Current Threads
+- **Modernising banking infrastructure:** private AKS, cloud networking, and Terraform for regulated platforms with strict security controls.
+- **Helping 40+ teams ship:** self-service infrastructure, reusable GitHub Actions, secure runners, and onboarding people can follow.
+- **Planning for failure:** AWS resilience, identity, backups, and ransomware-aware disaster recovery.
+- **Making the knowledge useful:** scripts, diagrams, runbooks, and a practical [Terraform AKS baseline clusters course](https://www.udemy.com/course/terraform-aks-baseline-clusters-deployment-walkthrough/?referralCode=B78129C45377998C5532).
 
-- Client work across banking infrastructure, platform engineering, AWS resilience, and delivery enablement
-- Platform experiments around local Kubernetes, Lima, and repeatable infrastructure workflows
-- Small practical tools for certificates, smoke testing, and developer utilities
-- Writing about cloud, security, AI-assisted development, and web tooling at [nickromney.com](https://www.nickromney.com)
-- Teaching with the [Terraform AKS baseline clusters course](https://www.udemy.com/course/terraform-aks-baseline-clusters-deployment-walkthrough/?referralCode=B78129C45377998C5532)
+The toolkit: Azure, AWS, Kubernetes, Terraform, Pulumi, Linux, and Bash.
 
-## Websites I Own or Run
+## Things I build and share
 
-- [Avuncular](https://avuncular.co/)
-- [By Lunchtime](https://bylunchtime.com/)
-- [CI/CD Pipelines](https://cicdpipelines.com/)
-- [Online Safety Alliance](https://www.onlinesafetyalliance.org/)
+Small tools for real jobs, alongside experiments in how platforms should work.
 
-## Project Strands
-
-These are the recurring strands that cut across the projects I take on:
-
-| Strand | What it looks like in practice |
+| Project | What it's for |
 | --- | --- |
-| Banking modernisation | Private AKS, ExpressRoute, Terraform modules, WAFs, service mesh, multi-environment delivery, and diagrams-as-code for regulated digital banking platforms |
-| Platform self-service | Internal developer platforms for 40+ teams using Pulumi, reusable GitHub Actions, secure runner hardening, onboarding docs, and standard deployment paths |
-| AWS resilience and recovery | EKS optimisation, IAM and AWS SSO, ransomware-aware backup and disaster recovery design, Redshift analytics, and legacy PHP containerisation |
-| AKS enablement and teaching | Turning reference architectures into Terraform, GitOps workflows, Azure policy baselines, helper scripts, and practical course content teams can apply immediately |
+| [certconv](https://github.com/nickromney/certconv) | Inspect and convert certificates, with an optional terminal UI |
+| [website-testing](https://github.com/nickromney/website-testing) | Smoke-test websites with Bash helpers and an evolving Go CLI |
+| [platform](https://github.com/nickromney/platform) | Explore local Kubernetes and repeatable lab environments with kind and Lima |
+| [visualsubnetcalc](https://github.com/nickromney/visualsubnetcalc) | Plan subnets visually and collaborate on address layouts |
+| [frankenphp-moodle](https://github.com/nickromney/frankenphp-moodle) | Run Moodle on FrankenPHP and MariaDB with repeatable verification |
+| [laemp](https://github.com/nickromney/laemp) | Provision Debian and Ubuntu hosts, with optional Moodle deployment |
 
-## Selected Public Work
+I also built a [thesis style checker](https://www.nickromney.com/style/) after helping a friend with a PhD thesis. It uses local JavaScript to flag common writing errors.
 
-| Project | What it is |
-| --- | --- |
-| [certconv](https://github.com/nickromney/certconv) | Non-invasive certificate inspection and conversion tool with an optional TUI |
-| [website-testing](https://github.com/nickromney/website-testing) | Minimal smoke-testing framework that is evolving from bash helpers into a Go CLI and TUI |
-| [platform](https://github.com/nickromney/platform) | Platform-engineering experiments across kind, Lima, Kubernetes, and local lab environments |
-| [visualsubnetcalc](https://github.com/nickromney/visualsubnetcalc) | Visual subnet design tool for planning networks and collaborating on address layouts |
-| [frankenphp-moodle](https://github.com/nickromney/frankenphp-moodle) | Container baseline for running Moodle on FrankenPHP and MariaDB with repeatable verification |
-| [laemp](https://github.com/nickromney/laemp) | Debian and Ubuntu host provisioning script with optional Moodle deployment |
+I write about cloud, security, AI-assisted development, and web tooling at [nickromney.com](https://www.nickromney.com/writing/).
 
-## Credentials
+## Elsewhere
 
-I hold the [CISSP](https://www.isc2.org/Certifications/CISSP), recognised as comparable to the U.K. Master's degree standard, alongside certifications across Terraform, Kubernetes, security, AWS, Azure, and Oracle Cloud Infrastructure.
+Sites I own or run: [Avuncular](https://avuncular.co/) · [By Lunchtime](https://bylunchtime.com/) · [CI/CD Pipelines](https://cicdpipelines.com/) · [Online Safety Alliance](https://www.onlinesafetyalliance.org/).
 
-The hands-on ones matter to me as much as the paper ones, so that list includes `CKA`, `CKAD`, `CKS`, the HashiCorp Terraform Associate, and a fairly deep run through AWS and Azure tracks.
+Certifications include **CISSP, CKA, CKAD, CKS, and Terraform Associate**, alongside AWS, Azure, and Oracle Cloud credentials. [Full list and study notes →](https://www.nickromney.com/certifications/)
 
-## Working Style
+> The job isn't finished when it works once. It's finished when the boring parts are automated and the next person knows how to run it.
 
-> I occasionally describe myself as an "internet plumber".
->
-> The job is not finished when the system works once. It is finished when the process is tuned, the boring parts are automated, and the documentation exists for the next person.
+Need help with cloud infrastructure or platform delivery? [Let's talk on LinkedIn.](https://www.linkedin.com/in/nickromney/)
