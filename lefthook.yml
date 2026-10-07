@@ -1,0 +1,4 @@
+pre-push:
+  commands:
+    profile:
+      run: uv run --locked python tools/check-profile.py

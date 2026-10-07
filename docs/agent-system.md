@@ -73,3 +73,7 @@ Verify local profile asset references and record dated external-link review scop
 ## Profile acceptance receipt
 
 Run `python3 tools/check-profile.py` to validate local rendered-image references without fetching profile destinations. On 6 October 2026 the external links were reviewed as authored destinations only; their live behavior and certification claims were not certified. README.md remains the public product, and operating guidance stays here/AGENTS.md.
+
+## Live action and learning contract
+
+[`.agent/contract.json`](../.agent/contract.json) names the exact local gate, bounded source/test inputs, effects, recovery and retained domain regression. Portfolio `contract`, `action-plan` and `learn` observation reads these live inputs; a changed basis invalidates reuse and never silently becomes successful runtime acceptance. Local verification runs through Lefthook; release/publication remains a separately authorized action.
