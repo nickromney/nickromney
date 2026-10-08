@@ -52,7 +52,7 @@
         },
         {
           "path": "tools/check-profile.py",
-          "sha256": "253c0545e0c712fba2ec20396814f6090ef5b261aa5869669e442b33d2a1057f"
+          "sha256": "e31ecffca5bcfd2d9d132560853e20de815fe44f53e9e0f3f8b2d3661a686217"
         },
         {
           "path": "lefthook.yml",
