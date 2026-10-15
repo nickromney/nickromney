@@ -54,13 +54,34 @@ cmd_doctor() {
 }
 cmd_profile() {
   local log="$EVIDENCE/profile-check.log"
-  (
+  local uv_path
+  local status
+  if command -v mise >/dev/null 2>&1; then
+    uv_path="$(mise which uv 2>/dev/null)" || uv_path=""
+  else
+    uv_path="$(command -v uv 2>/dev/null)" || uv_path=""
+  fi
+  case "$uv_path" in
+    /*) ;;
+    "") ;;
+    *) uv_path="$(cd "$(dirname "$uv_path")" && pwd)/$(basename "$uv_path")" || uv_path="" ;;
+  esac
+  if [ -z "$uv_path" ] || [ ! -x "$uv_path" ]; then
+    vk_fail "could not resolve an executable uv (install uv or make it available through mise)"
+    return 1
+  fi
+  if (
     cd "$VK_ROOT"
     HOME="$STATE/home" UV_CACHE_DIR="$STATE/uv-cache" \
       UV_PROJECT_ENVIRONMENT="$STATE/uv-env" UV_NO_SYNC=1 \
-      uv run --locked python tools/check-profile.py --repos-root "$REPOS_ROOT"
-  ) > "$log" 2>&1
-  cat "$log"
+      "$uv_path" run --locked python tools/check-profile.py --repos-root "$REPOS_ROOT"
+  ) > "$log" 2>&1; then
+    cat "$log"
+  else
+    status=$?
+    tail -n 20 "$log"
+    return "$status"
+  fi
 }
 cmd_cleanup() {
   rm -rf "${STATE:?}"
