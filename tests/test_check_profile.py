@@ -1,4 +1,5 @@
 """Tests for tools/check-profile.py using disposable fixture profiles and local git repos."""
+import os
 import shutil
 import subprocess
 import sys
@@ -8,6 +9,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 SCRIPT = REPO / 'tools' / 'check-profile.py'
+# A pre-push hook exports GIT_DIR etc.; drop them so fixture git calls stay in the fixture repos.
+GIT_LOCAL_ENV = subprocess.run(['git', 'rev-parse', '--local-env-vars'], capture_output=True, text=True, check=True).stdout.split()
+CLEAN_ENV = {k: v for k, v in os.environ.items() if k not in GIT_LOCAL_ENV}
 
 VALID_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"></svg>'
 README = (
@@ -35,9 +39,9 @@ class CheckProfileTests(unittest.TestCase):
         repo = self.repos / name
         shutil.rmtree(repo, ignore_errors=True)
         repo.mkdir(parents=True)
-        subprocess.run(['git', 'init', '-q', str(repo)], check=True)
+        subprocess.run(['git', 'init', '-q', str(repo)], check=True, env=CLEAN_ENV)
         if remote is not None:
-            subprocess.run(['git', '-C', str(repo), 'remote', 'add', 'origin', remote], check=True)
+            subprocess.run(['git', '-C', str(repo), 'remote', 'add', 'origin', remote], check=True, env=CLEAN_ENV)
         return repo
 
     def run_check(self):
@@ -45,6 +49,7 @@ class CheckProfileTests(unittest.TestCase):
             [sys.executable, str(self.profile / 'tools' / 'check-profile.py'), '--repos-root', str(self.repos)],
             capture_output=True,
             text=True,
+            env=CLEAN_ENV,
         )
 
     def test_valid_fixture_passes(self):
