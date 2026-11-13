@@ -35,3 +35,27 @@ SH
   [[ "$output" == *"profile failure detail"* ]]
   [ "$(cat "$VERIFY_EVIDENCE_ROOT/$VERIFY_RUN_ID/evidence/profile-check.log")" = $'fake uv reached with HOME='"$VERIFY_BASE_DIR/$VERIFY_RUN_ID/state/home"$'\nprofile failure detail' ]
 }
+
+@test "profile falls back to PATH uv when mise cannot resolve uv" {
+  ln -s "$UV" "$BIN/uv"
+  cat > "$BIN/mise" <<'SH'
+#!/bin/sh
+exit 1
+SH
+  chmod +x "$BIN/mise"
+  run /bin/bash "$SCRIPT" --execute launch
+  [ "$status" -eq 0 ]
+  run /bin/bash "$SCRIPT" --execute profile
+  [ "$status" -eq 37 ]
+  [[ "$output" == *"fake uv reached with HOME=$VERIFY_BASE_DIR/$VERIFY_RUN_ID/state/home"* ]]
+}
+
+@test "profile falls back to PATH uv when mise returns a nonexecutable path" {
+  ln -s "$UV" "$BIN/uv"
+  export TEST_UV_PATH="$BIN/missing-uv"
+  run /bin/bash "$SCRIPT" --execute launch
+  [ "$status" -eq 0 ]
+  run /bin/bash "$SCRIPT" --execute profile
+  [ "$status" -eq 37 ]
+  [[ "$output" == *"fake uv reached with HOME=$VERIFY_BASE_DIR/$VERIFY_RUN_ID/state/home"* ]]
+}

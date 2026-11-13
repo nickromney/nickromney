@@ -97,6 +97,30 @@ class CheckProfileTests(unittest.TestCase):
         result = self.run_check()
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_wrong_host_and_owner_suffix_fail(self):
+        for remote in ('https://example.com/nickromney/certconv.git',
+                       'git@github.com:notnickromney/certconv.git'):
+            with self.subTest(remote=remote):
+                self.make_repo('certconv', remote)
+                self.assertNotEqual(self.run_check().returncode, 0)
+
+    def test_single_quoted_missing_image_fails(self):
+        with (self.profile / 'README.md').open('a') as readme:
+            readme.write("<img src='./assets/missing.png'>")
+        self.assertNotEqual(self.run_check().returncode, 0)
+
+    def test_remote_image_cannot_replace_local_header(self):
+        (self.profile / 'README.md').write_text('<img src="https://example.com/header.svg">')
+        self.assertNotEqual(self.run_check().returncode, 0)
+
+    def test_missing_image_fails_with_optimization(self):
+        (self.profile / 'assets' / 'profile-header.svg').unlink()
+        result = subprocess.run(
+            [sys.executable, '-O', str(self.profile / 'tools' / 'check-profile.py'),
+             '--repos-root', str(self.repos)], capture_output=True, text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+
 
 if __name__ == '__main__':
     unittest.main()

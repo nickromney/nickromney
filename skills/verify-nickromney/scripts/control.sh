@@ -59,6 +59,9 @@ cmd_profile() {
   if command -v mise >/dev/null 2>&1; then
     uv_path="$(mise which uv 2>/dev/null)" || uv_path=""
   else
+    uv_path=""
+  fi
+  if [ -z "$uv_path" ] || [ ! -x "$uv_path" ]; then
     uv_path="$(command -v uv 2>/dev/null)" || uv_path=""
   fi
   case "$uv_path" in
