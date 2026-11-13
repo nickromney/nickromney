@@ -52,7 +52,7 @@ I write about cloud, security, AI-assisted development, and web tooling at [nick
 
 Sites I own or run: [Avuncular](https://avuncular.co/) · [By Lunchtime](https://bylunchtime.com/) · [CI/CD Pipelines](https://cicdpipelines.com/) · [Online Safety Alliance](https://www.onlinesafetyalliance.org/).
 
-Certifications include **CISSP, CKA, CKAD, CKS, and Terraform Associate**, alongside AWS, Azure, and Oracle Cloud credentials. [Full list and study notes →](https://www.nickromney.com/certifications/)
+I hold CISSP certification and have previously earned CKA, CKAD, CKS, Terraform Associate, and AWS, Azure, and Oracle Cloud credentials. [Certification history and study notes](https://www.nickromney.com/certifications/).
 
 > The job isn't finished when it works once. It's finished when the boring parts are automated and the next person knows how to run it.
 
